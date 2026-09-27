@@ -11,10 +11,15 @@
 ## 目录结构
 
 ```
-skills/
+skills/                 # 技能本体
 ├── <skill-name>/
 │   ├── SKILL.md        # 技能定义（YAML frontmatter + 指令）
 │   └── ...             # 其他辅助文件（脚本、模板、参考文档等）
+└── ...
+evals/                  # 测试用例与评分脚本（与技能分离）
+├── <skill-name>/
+│   ├── evals.json      # 测试提示与断言
+│   └── grade.py        # 可选：程序化评分脚本
 └── ...
 ```
 
